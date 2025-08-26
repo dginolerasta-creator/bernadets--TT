@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { supabase } from "@/lib/supabaseClient";
+import { supabase } from "@/lib/supabase"; 
 import Header from "@/components/Header";
-import { useAuth } from "@/context/AuthProvider";
+import { useAuth } from "@/components/AuthProvider";
 
 interface Joueur {
   id: number;

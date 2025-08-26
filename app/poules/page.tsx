@@ -1,9 +1,10 @@
 
-'use client';
+"use client"; // ⚠️ nécessaire pour pouvoir utiliser useState/useEffect
 
-import { useState, useEffect } from 'react';
-import Header from '../../components/Header';
-import { useAuth } from '../../components/AuthProvider';
+import { useState, useEffect } from "react";
+import { supabase } from "@/lib/supabase"; // <-- corrigé
+import Header from "@/components/Header";
+import { useAuth } from "@/components/AuthProvider"; // <-- corrigé
 
 interface Poule {
   id: string;
