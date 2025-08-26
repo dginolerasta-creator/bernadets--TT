@@ -1,0 +1,16 @@
+# netlify.toml - configuration pour déployer Next.js sur Netlify
+
+[build]
+  # Commande pour construire ton site
+  command = "npm run build"
+  
+  # Dossier à publier après build (Next.js statique/SSR)
+  publish = ".next"
+
+  # Version de Node à utiliser sur Netlify
+[build.environment]
+  NODE_VERSION = "20"
+
+# Plugin officiel pour Next.js sur Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
