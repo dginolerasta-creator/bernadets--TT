@@ -9,7 +9,7 @@
 
   # Version de Node à utiliser sur Netlify
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "18"
 
 # Plugin officiel pour Next.js sur Netlify
 [[plugins]]
